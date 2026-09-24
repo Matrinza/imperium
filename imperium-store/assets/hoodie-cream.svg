@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+<rect width="800" height="1000" fill="#eeeeee"/>
+<path d="M285 230 Q400 310 515 230 L625 335 545 430 510 390 510 835 290 835 290 390 255 430 175 335Z" fill="#ded8ce"/>
+<path d="M315 250 Q400 320 485 250 Q470 170 400 160 Q330 170 315 250Z" fill="#cfc8bd"/>
+<text x="400" y="515" text-anchor="middle" fill="#1a1a1a" font-family="Arial" font-size="27" letter-spacing="7">IMPERIUM</text>
+</svg>

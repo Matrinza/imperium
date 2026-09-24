@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IMPERIUM — More Than Clothing</title>
+  <meta name="description" content="IMPERIUM — premium South African clothing. Built on purpose. Designed for those who move different.">
+  <meta name="theme-color" content="#080808">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">FREE SHIPPING ON ORDERS OVER R1,000 <span>•</span> SOUTH AFRICA</div>
+
+  <header class="nav">
+    <a class="logo" href="#home">IMPERIUM</a>
+    <nav class="desktop-nav">
+      <a href="#home">HOME</a>
+      <a href="#shop">SHOP</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search" id="searchBtn">⌕</button>
+      <a class="icon-btn" aria-label="Account" href="#contact">♙</a>
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">▢ <span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="assets/imperium-hero.png" alt="IMPERIUM luxury streetwear campaign">
+      <div class="hero-overlay"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">IMPERIUM</p>
+        <h1>MORE THAN<br>CLOTHING.</h1>
+        <div class="line"></div>
+        <p>BUILT ON PURPOSE. DESIGNED FOR<br>THOSE WHO MOVE DIFFERENT.</p>
+        <a class="btn light" href="#shop">SHOP NOW <span>→</span></a>
+      </div>
+      <div class="hero-side">QUALITY<br>SIMPLICITY<br>IMPERIUM</div>
+    </section>
+
+    <section class="categories">
+      <a class="category" href="#shop" data-filter="T-Shirts"><span>T-SHIRTS</span><b>→</b></a>
+      <a class="category" href="#shop" data-filter="Hoodies"><span>HOODIES</span><b>→</b></a>
+      <a class="category" href="#shop" data-filter="Accessories"><span>ACCESSORIES</span><b>→</b></a>
+      <a class="category dark" href="#about"><span>THE BRAND</span><b>→</b></a>
+    </section>
+
+    <section class="shop section" id="shop">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow dark-text">FEATURED PRODUCTS</p>
+          <h2>NEW ARRIVALS</h2>
+        </div>
+        <div class="filters">
+          <button class="filter active" data-filter="All">ALL</button>
+          <button class="filter" data-filter="T-Shirts">T-SHIRTS</button>
+          <button class="filter" data-filter="Hoodies">HOODIES</button>
+          <button class="filter" data-filter="Accessories">ACCESSORIES</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="manifesto section" id="about">
+      <div>
+        <p class="eyebrow">THE IMPERIUM STANDARD</p>
+        <h2>WEAR YOUR<br>AMBITION.</h2>
+      </div>
+      <p>IMPERIUM is a South African clothing label built around discipline, ambition and individuality. We believe clothing should carry presence without needing to shout. Every release is designed to be simple, intentional and made to move with you.</p>
+    </section>
+
+    <section class="values">
+      <div><span>01</span><strong>QUALITY</strong><small>Considered materials and finishes.</small></div>
+      <div><span>02</span><strong>SIMPLICITY</strong><small>Clean design. Strong identity.</small></div>
+      <div><span>03</span><strong>PURPOSE</strong><small>Every piece has a reason to exist.</small></div>
+      <div><span>04</span><strong>IMPERIUM</strong><small>Build something that lasts.</small></div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow dark-text">CONTACT</p>
+      <h2>JOIN THE IMPERIUM.</h2>
+      <p>Questions, collaborations or wholesale enquiries? Send us a message.</p>
+      <a class="btn dark-btn" id="contactWhatsApp" href="#">WHATSAPP US →</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-logo">IMPERIUM</div>
+      <div><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+      <div><a href="shipping.html">Shipping</a><a href="returns.html">Returns</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+      <div><p>South Africa</p><p id="footerEmail">orders@yourdomain.co.za</p></div>
+    </div>
+    <div class="copyright">© <span id="year"></span> IMPERIUM. ALL RIGHTS RESERVED.</div>
+  </footer>
+
+  <div class="search-panel" id="searchPanel">
+    <input id="searchInput" placeholder="Search IMPERIUM products..." autocomplete="off">
+    <button id="closeSearch">×</button>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><h3>YOUR CART</h3><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-summary">
+      <div><span>Subtotal</span><strong id="cartSubtotal">R0</strong></div>
+      <div><span>Delivery</span><strong id="cartShipping">R0</strong></div>
+      <div class="total"><span>TOTAL</span><strong id="cartTotal">R0</strong></div>
+      <button class="btn full" id="checkoutBtn">CHECKOUT</button>
+      <p class="small">Checkout sends your order to WhatsApp. Connect Yoco before accepting card payments.</p>
+    </div>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <div class="modal" id="productModal">
+    <div class="modal-inner">
+      <button class="modal-close" id="closeModal">×</button>
+      <img id="modalImage" src="" alt="">
+      <div class="modal-copy">
+        <p class="eyebrow dark-text" id="modalCategory"></p>
+        <h2 id="modalName"></h2>
+        <p id="modalDescription"></p>
+        <strong class="modal-price" id="modalPrice"></strong>
+        <label>SIZE<select id="modalSize"><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select></label>
+        <label>QUANTITY<input id="modalQty" type="number" min="1" value="1"></label>
+        <button class="btn full dark-btn" id="modalAdd">ADD TO CART</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
